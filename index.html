@@ -3,171 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
     <title>Flashcards da Champions League 2026</title>
-    <style>
-        /* Configurações Gerais */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #050b14;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background: linear-gradient(135deg, #00183c, #002868);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #00ffcc;
-        }
-
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #00ffcc;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            border: 1px solid #ffffff;
-            padding: 8px 16px;
-            border-radius: 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #00ffcc;
-            color: #00183c;
-            border-color: #00ffcc;
-        }
-
-        main {
-            flex: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-top: 10px;
-            font-size: 1.8rem;
-            color: #f1f1f1;
-        }
-
-        /* Estrutura dos Flashcards */
-        .grid-cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        /* O container define a perspectiva 3D */
-        .cartao-container {
-            background-color: transparent;
-            width: 300px;
-            height: 400px;
-            perspective: 1000px; 
-        }
-
-        /* Caixa interna que vai girar */
-        .cartao-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0, 255, 204, 0.15);
-            border-radius: 15px;
-        }
-
-        /* Gira o card ao passar o mouse */
-        .cartao-container:hover .cartao-inner {
-            transform: rotateY(180deg);
-        }
-
-        /* Frente e Verso do Card */
-        .cartao-frente, .cartao-verso {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden; /* Safari */
-            backface-visibility: hidden;
-            border-radius: 15px;
-            border: 2px solid #00ffcc;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        /* Estilo da Frente */
-        .cartao-frente {
-            background-color: #0a192f;
-            color: white;
-        }
-
-        /* Estilo do Verso */
-        .cartao-verso {
-            background-color: #002868;
-            color: white;
-            transform: rotateY(180deg);
-            padding: 15px;
-            box-sizing: border-box;
-            justify-content: center;
-        }
-
-        /* Estilização das Imagens */
-        .cartao-imagem {
-            width: 100%;
-            height: 70%;
-            object-fit: cover;
-        }
-
-        /* Estilização dos Textos dos Cards */
-        .cartao-inner p {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin: auto 0;
-            padding: 10px;
-        }
-
-        /* Estilo específico para o texto explicativo no verso */
-        .texto-fato {
-            font-size: 0.95rem !important;
-            font-weight: normal !important;
-            line-height: 1.4;
-            color: #e2e8f0;
-        }
-
-        .titulo-verso {
-            font-size: 1.3rem;
-            color: #00ffcc;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #02060c;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #8892b0;
-        }
-    </style>
+    <!-- Conexão com o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -183,16 +21,16 @@
         
         <section class="grid-cards"> 
             
-            <!-- CARD 1: Original (Abertura/Taça) -->
+            <!-- CARD 1: Taça da Champions -->
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
                     <div class="cartao-frente"> 
-                        <img src="https://uefa.com" alt="Champions" class="cartao-imagem"> 
-                        <p>Abertura Champions League</p> 
+                        <img src="https://unsplash.com" alt="Troféu da Champions" class="cartao-imagem"> 
+                        <p>O Troféu Original</p> 
                     </div> 
                     <div class="cartao-verso"> 
-                        <span class="titulo-verso">A Grande Final</span>
-                        <p class="texto-fato">A grande taça "orelhuda" original fica sob a posse da UEFA, enquanto os clubes vencedores ganham uma réplica em tamanho real.</p> 
+                        <span class="titulo-verso">A Orelhuda</span>
+                        <p class="texto-fato">A grande taça original fica sob a posse perpétua da UEFA, enquanto os clubes vencedores ganham uma réplica exata em tamanho real.</p> 
                     </div>
                 </div> 
             </article> 
@@ -201,54 +39,54 @@
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
                     <div class="cartao-frente"> 
-                        <img src="https://unsplash.com" alt="Futebol" class="cartao-imagem"> 
+                        <img src="https://unsplash.com" alt="Rede de futebol com fogos" class="cartao-imagem"> 
                         <p>O Milagre de Istambul (2005)</p> 
                     </div> 
                     <div class="cartao-verso"> 
                         <span class="titulo-verso">Liverpool Campeão!</span>
-                        <p class="texto-fato">Na final de 2005, o Milan vencia por 3 a 0 no primeiro tempo. O Liverpool buscou o empate em 3 a 3 em apenas 6 minutos e faturou o título nos pênaltis.</p> 
+                        <p class="texto-fato">Na final de 2005, o Milan vencia por 3 a 0 no 1º tempo. O Liverpool buscou o empate em 3 a 3 em apenas 6 minutos e faturou a taça nos pênaltis.</p> 
                     </div>
                 </div> 
             </article> 
 
-            <!-- CARD 3: O Senhor Champions -->
+            <!-- CARD 3: Clarence Seedorf -->
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
                     <div class="cartao-frente"> 
-                        <img src="https://unsplash.com" alt="Chuteira" class="cartao-imagem"> 
-                        <p>Recorde de Clubes Diferentes</p> 
+                        <img src="https://unsplash.com" alt="Chuteiras no gramado" class="cartao-imagem"> 
+                        <p>Rei de Três Nações</p> 
                     </div> 
                     <div class="cartao-verso"> 
                         <span class="titulo-verso">Clarence Seedorf</span>
-                        <p class="texto-fato">Ele é o único jogador da história a vencer a competição por 3 clubes diferentes: Ajax (1995), Real Madrid (1998) e AC Milan (2003 e 2007).</p> 
+                        <p class="texto-fato">Ele é o único jogador na história do futebol a vencer a UEFA Champions League por 3 clubes diferentes: Ajax (1995), Real Madrid (1998) e Milan (2003 e 2007).</p> 
                     </div>
                 </div> 
             </article> 
 
-            <!-- CARD 4: O Gol Vapt-Vupt -->
+            <!-- CARD 4: Gol Mais Rápido (Roy Makaay) -->
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
                     <div class="cartao-frente"> 
-                        <img src="https://unsplash.com" alt="Estádio" class="cartao-imagem"> 
-                        <p>O Gol Mais Rápido</p> 
+                        <img src="https://unsplash.com" alt="Cronômetro / Bola de futebol" class="cartao-imagem"> 
+                        <p>O Gol Relâmpago</p> 
                     </div> 
                     <div class="cartao-verso"> 
                         <span class="titulo-verso">10.12 Segundos!</span>
-                        <p class="texto-fato">O holandês Roy Makaay detém o recorde do gol mais rápido do torneio. Ele marcou pelo Bayern de Munique contra o Real Madrid em 2007 logo no início da partida.</p> 
+                        <p class="texto-fato">O holandês Roy Makaay detém o recorde de gol mais rápido da história. Ele marcou pelo Bayern de Munique contra o Real Madrid em 2007 logo na saída de bola.</p> 
                     </div>
                 </div> 
             </article> 
 
-            <!-- CARD 5: Hegemonia Inicial -->
+            <!-- CARD 5: Domínio Inicial do Real Madrid -->
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
                     <div class="cartao-frente"> 
-                        <img src="https://unsplash.com" alt="Trave" class="cartao-imagem"> 
-                        <p>O Dono da Europa</p> 
+                        <img src="https://unsplash.com" alt="Bola de futebol oficial" class="cartao-imagem"> 
+                        <p>O Primeiro Pentacampeão</p> 
                     </div> 
                     <div class="cartao-verso"> 
                         <span class="titulo-verso">Real Madrid</span>
-                        <p class="texto-fato">O clube espanhol venceu as cinco primeiras edições consecutivas do torneio (de 1956 a 1960), feito que até hoje nunca foi igualado.</p> 
+                        <p class="texto-fato">O clube espanhol venceu as cinco primeiras edições consecutivas do torneio (de 1956 a 1960). Um feito de dinastia até hoje imbatível na Europa.</p> 
                     </div>
                 </div> 
             </article> 
@@ -262,4 +100,3 @@
 
 </body>
 </html>
-
