@@ -1,37 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  >Champions League 2026</h1> 
-  <nav> 
-    <a href="#">Início</a> 
-  </nav> 
-</header> 
-
-  <main>
-    <h2>Descubra mais sobre a Champions</h2> 
-  <section> 
-    <article> 
-      <div> 
-        <div> 
-          <img src="https://editorial.uefa.com/resources/0246-0e98e0b96aae-10e5233c25c8-1000/format/wide1/ucl_branding.jpeg?imwidth=2048" alt="Champions" class="cartao-imagem"> 
-          <p>Abertura Champions League</p> 
-        </div> 
-        <div class="cartao-verso"> 
-          <img src="https://m.media-amazon.com/images/M/MV5BZGJiYjcwMzEtNmVhNy00NmZkLThiNzItYzdmMjYxYjczNjY2XkEyXkFqcGc@._V1_.jpg" alt="Taça Champions League" class="cartao-imagem"> 
-          <p>Taça da Champions League</p> 
-        </div> 
-      </div> 
-    </article> 
-  </section>    
-  </main>
-
-  <footer>
-  </footer>
-</body>
-</html>  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcards da Champions League 2026</title>
+    <style>
+        /* Configurações Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #050b14;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00183c, #002868);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #00ffcc;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00ffcc;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #ffffff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00ffcc;
+            color: #00183c;
+            border-color: #00ffcc;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+
+        /* Estrutura dos Flashcards */
+        .grid-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* O container define a perspectiva 3D */
+        .cartao-container {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px; 
+        }
+
+        /* Caixa interna que vai girar */
+        .cartao-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2);
+            border-radius: 15px;
+        }
+
+        /* Gira o card ao passar o mouse */
+        .cartao-container:hover .cartao-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Frente e Verso do Card */
+        .cartao-frente, .cartao-verso {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            border-radius: 15px;
+            border: 2px solid #00ffcc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Estilo da Frente */
+        .cartao-frente {
+            background-color: #0a192f;
+            color: white;
+        }
+
+        /* Estilo do Verso */
+        .cartao-verso {
+            background-color: #002868;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* Estilização das Imagens */
+        .cartao-imagem {
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+        }
+
+        /* Estilização dos Textos dos Cards */
+        .cartao-inner p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: auto 0;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #02060c;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #8892b0;
+        }
+    </style>
 </head>
 <body>
+
     <header> 
-  <h1
+        <h1>Champions League 2026</h1> 
+        <nav> 
+            <a href="#">Início</a> 
+        </nav> 
+    </header> 
+
+    <main>
+        <h2>Descubra mais sobre a Champions</h2> 
+        
+        <section class="grid-cards"> 
+            <article class="cartao-container"> 
+                <div class="cartao-inner"> 
+                    
+                    <!-- Frente do Card -->
+                    <div class="cartao-frente"> 
+                        <img src="https://editorial.uefa.com/resources/0246-0e98e0b96aae-10e5233c25c8-1000/format/wide1/ucl_branding.jpeg?imwidth=2048" alt="Champions" class="cartao-imagem"> 
+                        <p>Abertura Champions League</p> 
+                    </div> 
+                    
+                    <!-- Verso do Card -->
+                    <div class="cartao-verso"> 
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGJiYjcwMzEtNmVhNy00NmZkLThiNzItYzdmMjYxYjczNjY2XkEyXkFqcGc@._V1_.jpg" alt="Taça Champions League" class="cartao-imagem"> 
+                        <p>Taça da Champions League</p> 
+                    </div>
+
+                </div> 
+            </article> 
+        </section>    
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Flashcards Champions League</p>
+    </footer>
+
+</body>
+</html>
