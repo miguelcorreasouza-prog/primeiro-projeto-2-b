@@ -52,13 +52,14 @@
             flex: 1;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 4px;
+            padding: 20px;
             text-align: center;
         }
 
         h2 {
-            margin-top: 30px;
+            margin-top: 10px;
             font-size: 1.8rem;
+            color: #f1f1f1;
         }
 
         /* Estrutura dos Flashcards */
@@ -87,7 +88,7 @@
             transition: transform 0.6s;
             transform-style: preserve-3d;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 255, 204, 0.15);
             border-radius: 15px;
         }
 
@@ -123,21 +124,38 @@
             background-color: #002868;
             color: white;
             transform: rotateY(180deg);
+            padding: 15px;
+            box-sizing: border-box;
+            justify-content: center;
         }
 
         /* Estilização das Imagens */
         .cartao-imagem {
             width: 100%;
-            height: 75%;
+            height: 70%;
             object-fit: cover;
         }
 
         /* Estilização dos Textos dos Cards */
         .cartao-inner p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             margin: auto 0;
             padding: 10px;
+        }
+
+        /* Estilo específico para o texto explicativo no verso */
+        .texto-fato {
+            font-size: 0.95rem !important;
+            font-weight: normal !important;
+            line-height: 1.4;
+            color: #e2e8f0;
+        }
+
+        .titulo-verso {
+            font-size: 1.3rem;
+            color: #00ffcc;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -160,26 +178,80 @@
     </header> 
 
     <main>
-        <h2>Descubra mais sobre a Champions</h2> 
+        <h2>Descubra Fatos & Curiosidades sobre a Champions</h2> 
         
         <section class="grid-cards"> 
+            
+            <!-- CARD 1: Original (Abertura/Taça) -->
             <article class="cartao-container"> 
                 <div class="cartao-inner"> 
-                    
-                    <!-- Frente do Card -->
                     <div class="cartao-frente"> 
-                        <img src="https://editorial.uefa.com/resources/0246-0e98e0b96aae-10e5233c25c8-1000/format/wide1/ucl_branding.jpeg?imwidth=2048" alt="Champions" class="cartao-imagem"> 
+                        <img src="https://uefa.com" alt="Champions" class="cartao-imagem"> 
                         <p>Abertura Champions League</p> 
                     </div> 
-                    
-                    <!-- Verso do Card -->
                     <div class="cartao-verso"> 
-                        <img src="https://m.media-amazon.com/images/M/MV5BZGJiYjcwMzEtNmVhNy00NmZkLThiNzItYzdmMjYxYjczNjY2XkEyXkFqcGc@._V1_.jpg" alt="Taça Champions League" class="cartao-imagem"> 
-                        <p>Taça da Champions League</p> 
+                        <span class="titulo-verso">A Grande Final</span>
+                        <p class="texto-fato">A grande taça "orelhuda" original fica sob a posse da UEFA, enquanto os clubes vencedores ganham uma réplica em tamanho real.</p> 
                     </div>
-
                 </div> 
             </article> 
+
+            <!-- CARD 2: O Milagre de Istambul (2005) -->
+            <article class="cartao-container"> 
+                <div class="cartao-inner"> 
+                    <div class="cartao-frente"> 
+                        <img src="https://unsplash.com" alt="Futebol" class="cartao-imagem"> 
+                        <p>O Milagre de Istambul (2005)</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="titulo-verso">Liverpool Campeão!</span>
+                        <p class="texto-fato">Na final de 2005, o Milan vencia por 3 a 0 no primeiro tempo. O Liverpool buscou o empate em 3 a 3 em apenas 6 minutos e faturou o título nos pênaltis.</p> 
+                    </div>
+                </div> 
+            </article> 
+
+            <!-- CARD 3: O Senhor Champions -->
+            <article class="cartao-container"> 
+                <div class="cartao-inner"> 
+                    <div class="cartao-frente"> 
+                        <img src="https://unsplash.com" alt="Chuteira" class="cartao-imagem"> 
+                        <p>Recorde de Clubes Diferentes</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="titulo-verso">Clarence Seedorf</span>
+                        <p class="texto-fato">Ele é o único jogador da história a vencer a competição por 3 clubes diferentes: Ajax (1995), Real Madrid (1998) e AC Milan (2003 e 2007).</p> 
+                    </div>
+                </div> 
+            </article> 
+
+            <!-- CARD 4: O Gol Vapt-Vupt -->
+            <article class="cartao-container"> 
+                <div class="cartao-inner"> 
+                    <div class="cartao-frente"> 
+                        <img src="https://unsplash.com" alt="Estádio" class="cartao-imagem"> 
+                        <p>O Gol Mais Rápido</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="titulo-verso">10.12 Segundos!</span>
+                        <p class="texto-fato">O holandês Roy Makaay detém o recorde do gol mais rápido do torneio. Ele marcou pelo Bayern de Munique contra o Real Madrid em 2007 logo no início da partida.</p> 
+                    </div>
+                </div> 
+            </article> 
+
+            <!-- CARD 5: Hegemonia Inicial -->
+            <article class="cartao-container"> 
+                <div class="cartao-inner"> 
+                    <div class="cartao-frente"> 
+                        <img src="https://unsplash.com" alt="Trave" class="cartao-imagem"> 
+                        <p>O Dono da Europa</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="titulo-verso">Real Madrid</span>
+                        <p class="texto-fato">O clube espanhol venceu as cinco primeiras edições consecutivas do torneio (de 1956 a 1960), feito que até hoje nunca foi igualado.</p> 
+                    </div>
+                </div> 
+            </article> 
+
         </section>    
     </main>
 
@@ -189,3 +261,4 @@
 
 </body>
 </html>
+
